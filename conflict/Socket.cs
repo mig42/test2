@@ -7,7 +7,7 @@ namespace Network
         internal string GetHostByName(string addr)
         {
             // this method returns the host
-            // when you give an IP
+            // when you give an addr
             return CalculateHostByName(addr);
         }
 
@@ -18,20 +18,23 @@ namespace Network
             // to listen
         }
 
-        internal void ConnectTo(string addr)
+        internal int Recv(byte[] buffer)
         {
-            // connect to a client
-            Net.ConnectTo(addr);
+            System.IO.Read(buffer);
         }
+    }
 
+    internal class ClientSocket
+    {
         internal int Send(byte[] buffer)
         {
             System.IO.Write(buffer);
         }
 
-        internal int Recv(byte[] buffer)
+        internal void ConnectTo(string addr)
         {
-            System.IO.Read(buffer);
+            // connect to a client
+            Net.ConnectTo(addr);
         }
     }
 }
