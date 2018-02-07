@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-
+//changes
 using log4net;
 
 using Codice.CM.Client.Differences.Graphic;
