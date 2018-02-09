@@ -4,11 +4,10 @@ namespace Network
 {
     internal class Socket
     {
-        internal string GetHostByName(string addr)
+        internal void ConnectTo(string addr)
         {
-            // this method shouldn't be here but returns the host
-            // when you give an IP
-            return CalculateHostByName(addr);
+            // connect to a client
+            Net.ConnectTo(addr);
         }
 
         internal int Send(byte[] buffer)
