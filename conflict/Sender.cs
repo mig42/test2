@@ -6,7 +6,7 @@ namespace Network
     {
         internal string GetHostByName(string addr)
         {
-            // this method returns the host
+            // this method shouldn't be here but returns the host
             // when you give an IP
             return CalculateHostByName(addr);
         }

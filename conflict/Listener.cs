@@ -13,7 +13,7 @@ namespace Network
 
         internal void ConnectTo(string addr)
         {
-            // connect to a client
+            // connect to a remote client
             Net.ConnectTo(addr);
         }
 
